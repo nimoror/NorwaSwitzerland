@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.norwayvsswitzerland'
+    namespace 'com.strikedevx.norwayvsswitzerland'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.norwayvsswitzerland"
+        applicationId "com.strikedevx.norwayvsswitzerland"
         minSdk 28
         targetSdk 33
         versionCode 1

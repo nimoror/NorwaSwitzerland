@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -11,8 +12,8 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop" />
 
-    <!-- Layout for the two buttons -->
     <LinearLayout
+        android:id="@+id/buttonLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -25,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Norway"
-            android:textSize="23sp" />
+            android:textSize="20sp" />
 
         <!-- Button for guessing Switzerland -->
         <Button
@@ -34,7 +35,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Switzerland"
-            android:textSize="23sp" />
+            android:textSize="20sp" />
+
+        <!-- Play again button after the game ends -->
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play again"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <!-- TextView for displaying the score -->
@@ -42,8 +53,10 @@
         android:id="@+id/scoreTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonsLayout"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:text="Score: 0"
         android:textSize="33sp"
         android:textColor="@android:color/white"
@@ -58,5 +71,47 @@
         android:textSize="50sp"
         android:textStyle="bold"
         android:visibility="gone" />  <!-- Initially hidden -->
+
+    <!-- The three heart symbols -->
+    <ImageView
+        android:id="@+id/heart1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/heart_pink_del" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toStartOf="@+id/heart1"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/heart_pink_del" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toStartOf="@+id/heart2"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/heart_pink_del" />
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="33sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />  <!-- Initially hidden -->
+
 
 </RelativeLayout>
