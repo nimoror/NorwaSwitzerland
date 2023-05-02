@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774525719604",
+    "project_id": "geoguess---fjords-vs-alps",
+    "storage_bucket": "geoguess---fjords-vs-alps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774525719604:android:c27ace58817fd145ece661",
+        "android_client_info": {
+          "package_name": "com.strikedevx.norwayvsswitzerland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774525719604-qda06dfjgvjg328l3d31k4mjbitegatp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAthAfMOxrBCkoo5hXkUfwGvrc2dU-fhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774525719604-qda06dfjgvjg328l3d31k4mjbitegatp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
