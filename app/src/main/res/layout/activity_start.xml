@@ -34,6 +34,17 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/playerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Player Name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
 
 
 </RelativeLayout>
